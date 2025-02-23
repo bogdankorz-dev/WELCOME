@@ -90,7 +90,44 @@ body {
                  0px 0px 20px rgb(255, 255, 255),
                  0px 0px 30px rgb(255, 255, 255),
                  0px 0px 35px rgb(255, 255, 255);       
+                 
 }
+
+.burger-menu {
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    z-index: 99;
+}
+
+.links-mobile {
+    display: none;
+}
+
+.links-mobile {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 70%;
+    height: 500px;
+    background: rgba(51, 51, 51, 0.95);
+    text-align: center;
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 99;
+  }
+
+  .links-mobile a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
 
 .links li a {
     transition: color 0.5s ease, transform 0.5s ease; 
@@ -227,6 +264,7 @@ body {
     justify-content: center;
     height: 550px;
     border: 2px rgb(212, 0, 255) solid;
+    max-width: 100%
 }
 
 .img-bogdan img {
@@ -290,4 +328,174 @@ body {
 }
 
 
+@media (max-width: 910px ) {
+    .logo {
+        height: 99px;
+    }
 
+    .present {
+        font-size: 48px; 
+    } 
+
+    .quote {
+        font-size: 23px;
+    }
+
+    .links {
+        font-size: 19px;
+    }
+
+    .bogdan-text {
+        font-size: 23px;
+    }
+
+    .img-bogdan {
+        height: 450px;
+    }
+
+    .slyder {
+        height: 80px;
+    }
+
+    .about-item {
+        font-size: 40px;
+    }
+
+    .link-games img {
+        height: 210px;
+    }
+
+    .donate-for-me {
+        font-size: 50px;
+    }
+
+    .donat-button {
+        font-size: 45px;
+    }
+
+}
+
+@media (max-width: 760px ) {
+    .logo {
+        height: 130px;
+    }
+
+    .present {
+        font-size: 67px; 
+    } 
+
+    .quote {
+        display: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .bogdan-text {
+        font-size: 29px;
+        text-align: center;
+    }
+
+    .img-bogdan {
+        height: 300px;
+    }
+
+    .img-bogdan img {
+        width: 260px;
+    }
+
+    .burger-menu {
+        display: block;
+      }
+    
+      .links-mobile {
+        display: none;
+      }
+
+      .about-me-wrapper {
+        flex-direction: column;
+      }
+}
+
+@media (max-width: 620px ) {
+    .logo {
+        height: 130px;
+    }
+
+    .present {
+        font-size: 45px; 
+    } 
+
+    .quote {
+        display: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .bogdan-text {
+        font-size: 27px;
+        text-align: center;
+    }
+ 
+    .burger-menu {
+        display: block;
+      }
+    
+      .links-mobile {
+        display: none;
+      }
+}
+
+@media (max-width: 525px ) {
+    .logo {
+        height: 100px;
+    }
+
+    .present {
+        font-size: 40px; 
+    } 
+
+    .quote {
+        display: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .slyder {
+        height: 60px;
+    }
+
+    .link-games img {
+        height: 150px;
+    }
+
+    .about-item {
+        font-size: 35px;
+    }
+
+    .bogdan-text {
+        font-size: 23px;
+        text-align: center;
+    }
+ 
+    .burger-menu {
+        display: block;
+      }
+    
+      .links-mobile {
+        display: none;
+      }
+
+      .donate-for-me {
+        font-size: 33px;
+    }
+
+    .donat-button {
+        font-size: 35px;
+    }
+}
