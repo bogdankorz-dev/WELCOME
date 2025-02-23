@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #000000;
+    background-image: url(./body-img/1640695085_5-abrakadabra-fun-p-neonovie-kirpichi-fon-5.png);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    margin-bottom: 70px;
+}
+
+.header-wraper {
+    background-image: url(header/img/13224344.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+    height: 140px;
+}
+
+.logo>img {
+    filter: drop-shadow(1px 1px 35px rgb(160, 158, 158));
+} 
+
+.present {
+    text-transform: uppercase;
+    background-image: url(./header/img/dbzk_game-thumbnail.webp);
+    background-position: center;
+    background-size: cover;
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(1px 1px 35px rgb(160, 158, 158));
+} 
+
+.quote {
+    font-family: "Modak", system-ui;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 1;
+    color: rgb(212, 55, 7);
+    filter: drop-shadow(1px 1px 35px rgb(160, 158, 158));
+}
+
+.links {
+    height: 50px;
+    font-family: "Modak", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 50px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255),
+                 0px 0px 20px rgb(255, 255, 255),
+                 0px 0px 30px rgb(255, 255, 255),
+                 0px 0px 35px rgb(255, 255, 255);       
+}
+
+.links li a {
+    transition: color 0.5s ease, transform 0.5s ease; 
+    transform: scale(1); 
+}
+
+.links li:hover .youtube {
+    color: rgb(230, 20, 5);
+}
+
+.links li:hover .steam {
+    color: rgb(2, 60, 136);
+}
+
+.links li:hover .instagram {
+    color: rgb(136, 2, 36);
+}
+
+.links li:hover .tiktok {
+    color: rgb(1, 109, 100);
+}
+
+.links li:hover .telegram {
+    color: rgb(0, 81, 255);
+}
+
+.links li:hover .fasebook {
+    color: rgb(35, 148, 201);
+}
+
+
+.about-us {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(./main/img-about-ua/shutterstock_2410457909.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    box-shadow: rgb(255, 255, 255) 0 0 10px 1px;
+    margin-bottom: 80px;
+}
+
+.about-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: brightness(0.5);
+}
+
+.about-item {
+    position: relative;
+    width: 50%;
+    font-family: "Modak", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: bisque;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0),
+    0px 0px 20px rgb(0, 0, 0),
+    0px 0px 30px rgb(255, 94, 0),
+    0px 0px 35px rgb(255, 145, 0);  
+}
+
+.korz-wraper {
+    display: flex;
+    position: relative; /* Чтобы элемент мог быть выше слоя фильтра */
+    z-index: 2;
+}
+
+.link-games img {
+    border-radius: 100%;
+    height: 300px;
+    transition: 2s ease;
+    filter: drop-shadow(1px 1px 35px rgb(255, 255, 255));
+}
+
+.link-games:hover img {
+    transform: scale(1.2);
+    transition: 2s ease;
+}
+
+.slyder {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 110px;
+    padding: 5px;
+    margin-bottom: 80px;
+    gap: 10px;
+}
+
+.slyder-img {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    cursor: pointer;
+    width: 10%;
+    height: 100%;
+    filter: drop-shadow(1px 1px 35px rgb(255, 255, 255));
+    transform: scale(1.1);
+    transition: 2s ease;
+}
+
+.slyder-img:hover {
+    flex: 3;
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.about-me {
+    margin-bottom: 80px;
+}
+
+.about-me-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    backdrop-filter: brightness(0.5);
+}
+
+.img-bogdan {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    border: 2px rgb(212, 0, 255) solid;
+}
+
+.img-bogdan img {
+    background-size: cover;
+}
+
+.bogdan-text {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    font-size: 29px;
+    color: white;
+    padding: 35px;
+}
+
+.donate-chanel {
+    margin-bottom: 80px;
+}
+
+.donate-chanel-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    backdrop-filter: brightness(0.5);
+}
+
+.donate-for-me {
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+.donat-link-wrapper {
+    margin-top: 50px;
+}
+
+.donat-button {
+
+    font-size: 50px;
+    font-family: "Modak", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    padding: 8px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3%;
+    background-color: rgb(255, 106, 0);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.donat-link:hover .donat-button {
+    transform: scale(1.2);
+    transition: 1s ease;
+    background-color: rgb(98, 0, 255);
+    color: #fff;
+}
+
+
+
