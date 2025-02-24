@@ -93,42 +93,6 @@ body {
                  
 }
 
-.burger-menu {
-    font-size: 60px;
-    color: white;
-    cursor: pointer;
-    display: none;
-    z-index: 99;
-}
-
-.links-mobile {
-    display: none;
-}
-
-.links-mobile {
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    width: 70%;
-    height: 500px;
-    background: rgba(51, 51, 51, 0.95);
-    text-align: center;
-    padding: 10px 0;
-    transition: all 0.3s ease-in-out;
-    z-index: 99;
-  }
-
-  .links-mobile a {
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    display: block;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-  }
-
-
 .links li a {
     transition: color 0.5s ease, transform 0.5s ease; 
     transform: scale(1); 
@@ -388,12 +352,16 @@ body {
         display: none;
     }
 
+    .nav {
+        margin-bottom: 80px;
+    }
+
     .links {
         display: none;
     }
 
     .bogdan-text {
-        font-size: 29px;
+        font-size: 23px;
         text-align: center;
     }
 
@@ -402,19 +370,12 @@ body {
     }
 
     .img-bogdan img {
-        width: 260px;
+        width: 240px;
     }
-
-    .burger-menu {
-        display: block;
-      }
-    
-      .links-mobile {
-        display: none;
-      }
 
       .about-me-wrapper {
         flex-direction: column;
+        height: 700px;
       }
 }
 
@@ -436,17 +397,9 @@ body {
     }
 
     .bogdan-text {
-        font-size: 27px;
+        font-size: 23px;
         text-align: center;
     }
- 
-    .burger-menu {
-        display: block;
-      }
-    
-      .links-mobile {
-        display: none;
-      }
 }
 
 @media (max-width: 525px ) {
@@ -482,14 +435,49 @@ body {
         font-size: 23px;
         text-align: center;
     }
- 
-    .burger-menu {
-        display: block;
-      }
-    
-      .links-mobile {
+
+      .donate-for-me {
+        font-size: 33px;
+    }
+
+    .donat-button {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 404px ) {
+    .logo {
+        height: 75px;
+    }
+
+    .present {
+        font-size: 35px; 
+    } 
+
+    .quote {
         display: none;
-      }
+    }
+
+    .links {
+        display: none;
+    }
+
+    .slyder {
+        height: 55px;
+    }
+
+    .link-games img {
+        height: 150px;
+    }
+
+    .about-item {
+        font-size: 35px;
+    }
+
+    .bogdan-text {
+        font-size: 18px;
+        text-align: center;
+    }
 
       .donate-for-me {
         font-size: 33px;
