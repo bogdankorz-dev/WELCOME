@@ -204,6 +204,10 @@ body {
     transition: 2s ease;
 }
 
+.slyder-img a {
+    display: flex;
+}
+
 .slyder-img:hover {
     flex: 3;
     transform: scale(1.1);
